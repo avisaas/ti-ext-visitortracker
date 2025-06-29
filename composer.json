@@ -1,7 +1,7 @@
 {
-    "name": "igniterlabs/ti-ext-visitortracker",
+    "name": "avisaas/ti-ext-visitortracker",
     "type": "tastyigniter-package",
-    "description": "Enables you track to your visitors, browsers, operating systems, page views & visits on your TastyIgniter website.",
+    "description": "Enables you track to your visitors, browsers, operating systems, page views & visits on your TastyIgniter website. (avisaas mirror of igniterlabs/ti-ext-visitortracker: adds the avisaas Marketplace connector, which reports the site domain and version to avisaas.)",
     "license": "MIT",
     "authors": [
         {
@@ -11,7 +11,8 @@
     "require": {
         "geoip2/geoip2": "~2.0",
         "jenssegers/agent": "~2.6",
-        "tastyigniter/core": "^v4.0"
+        "tastyigniter/core": "^v4.0",
+        "avisaas/ti-ext-connector": "^1.3"
     },
     "require-dev": {
         "laravel/pint": "^1.2",
@@ -70,5 +71,8 @@
             "@test:static",
             "@test:coverage"
         ]
+    },
+    "replace": {
+        "igniterlabs/ti-ext-visitortracker": "self.version"
     }
 }
